@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>webSite</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logo"><span>Brayn Frandoloso</span></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" onclick="Secao1()">Inicio</a></li>
+                <li class="nav-item"><a href="#" onclick="Secao2()">Sobre</a></li>
+                <li class="nav-item"><a href="#" onclick="Secao3()">Portifólio</a></li>
+                <li class="nav-item"><a href="#" onclick="Secao4()">Contato</a></li>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home" id='home'>
+            <link rel="stylesheet" href="style_home.css">
+
+            <div class="home-text">
+                <h4 class="text-h4">Desenvolvedor de Web Sites</h4>
+                <h1 class="text-h1">Aqui as melhores soluções para o seu negócio ou empresa</h1>
+                <p>&emsp;&emsp;Olá! Meu nome é Brayn e sou especialista em criação de sites.
+                    ajudo empresas e profissionais a estabelecerem uma presença
+                    online impactante e funcional.</p>
+                <a href="#" onclick="Secao4_1()" class="home-btn">Contato</a>
+            </div>
+            <div class="home-img">
+                <img src="logo.png">
+            </div>
+        </section>
+
+        <section class="Sobre" id='Sobre'>
+            <link rel="stylesheet" href="style_sobre.css">
+            <div class="Sobre-text">
+                <h1 class="text-h1">Referência na região</h1>
+                <p>&emsp;&emsp;Meu foco é desenvolver sites personalizados que atendam às
+                    necessidades específicas de cada cliente, garantindo uma
+                    navegação intuitiva e um design moderno. Utilizo as mais
+                    recentes tecnologias e tendências de web design para criar
+                    soluções que não apenas impressionam visualmente, mas também
+                    oferecem uma excelente experiência ao usuário. <br>
+                    &emsp;&emsp;Se você está procurando um site que reflita a identidade da sua
+                    marca e atraia mais clientes, estou aqui para ajudar. Vamos
+                    transformar suas ideias em realidade digital!</p>
+                <a href="#" onclick="Secao3_1()" class="home-btn">Portifólio</a>
+            </div>
+
+            <div class="Sobre-img">
+                <img src="tecnologia.png">
+            </div>
+
+        </section>
+
+        <section class="produtos" id="produtos">
+            <link rel="stylesheet" href="style_portfolio.css">
+            <h2 class="section-title">Meu Portifolio</h2>
+
+
+            <div id="dishes">
+                <div class="dish">
+
+                    <a href="https://brayn123.github.io/Agropecuaria/" target="_blank" rel="noopener noreferrer">
+                        <img src="src/images/dish.png" class="dish-image" alt="">
+                    </a>
+
+                    <h3 class="dish-title">
+                        Site de Agronegócio
+                    </h3>
+
+                    <span class="dish-description">
+                        Site com desenvolvimento voltado a Agricultura
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="Contatos" id='Contatos'>
+            <link rel="stylesheet" href="style_Contatos.css">
+            <div id="Nome_contatos">
+                <h1>
+                    Brayn Ivanir Frandoloso
+                </h1>
+            </div>
+
+            <div id="cta_buttons">
+
+                <a href="https://wa.link/yr5k4x" id="phone_button">
+                    <button class="btn-default">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                    (42) 99860-1654&emsp;
+                </a>
+            </div>
+
+            <div id="cta_buttons">
+
+                <a href="https://www.instagram.com/braynfrandoloso/" id="phone_button">
+                    <button class="btn-default">
+                        <i class="fa-brands fa-instagram"></i>
+                    </button>
+                    instagram&emsp;&emsp;&emsp;&emsp;
+                </a>
+            </div>
+
+            <div id="cta_buttons">
+
+                <a href="https://www.facebook.com/braynivanir.frandoloso.5/" id="phone_button">
+                    <button class="btn-default">
+                        <i class="fa-brands fa-facebook"></i>
+                    </button>
+                    facebook&emsp;&emsp;&emsp;&emsp;
+                </a>
+            </div>
+
+        </section>
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

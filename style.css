@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --red:#37fc62;
+    --white:rgba(0, 0, 0, 0.63);
+    --dark:#37fc62;
+}
+
+body{
+    background: linear-gradient(90deg, rgb(192, 192, 196) 0%, rgba(9, 48, 121, 0.548) 50%, rgba(0, 213, 255, 0.425) 100%);
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #00000065;
+    width: 100%;
+    background: var(--white);
+    transition: all 0.5s;
+    position: fixed;
+    opacity: 95%;
+}
+
+.navigation .logo{
+    margin-left: 10%;
+    color: var(--red);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.navigation ul{
+    margin-right: 8%;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.navigation ul li a{
+    color: var(--dark);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.navigation ul li a:hover{
+    color: rgb(36, 121, 250);
+}
+.navigation i{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--dark);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+
+
+@media (max-width: 1170px) {
+    html {
+        font-size: 65%;
+    }
+    
+}
+
+@media (max-width: 999px) {
+    html {
+        font-size: 55%;
+    }
+    
+}
+
+
+@media (max-width:785px) {
+
+    html {
+        font-size: 75%;
+    }
+    
+    .navigation{
+        padding: 18px 20px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform:  translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        margin-right: 0%;
+        position: fixed;
+        right: -125%;
+        top: 66px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--white);
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .nav-menu.ativo{
+        right: -8%;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    
+}
